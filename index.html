@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <title> Scape Coronavírus </title>
+        <meta charset="utf-8"/>
+        <meta lang="pt-br"/>
+
+        <script src="./js/graph/graph.js"></script>
+        <script src="./js/csp/csp.js"></script>
+        <!-- <script src="./js/csp/map-color.js"></script> -->
+        <script src="./js/service/resources.js"></script>
+        <script src="./js/game/board.js"></script>
+        <script src="./js/game/view.js"></script>
+        <script src="./js/game/game.js"></script>
+
+        <style id="global-variables"> 
+
+            body {
+                --board-background-color: #4A90E2;
+                --board-background-hover-color: #FF2968;
+                --board-border-color: black;
+                --button-color: #F5A623;
+                --button-text-color: white;
+            }
+
+        </style>
+
+        <link rel="stylesheet" href="./css/style.css"/>        
+
+    </head>
+
+    <body>
+
+        <h1> 👩👦 Scape Coronavírus 🦠🦠 </h1>
+        <p> Posicione os obstaculos no mapa para impedir que o Coronavírus chegue até a pessoa. </p>
+        <a href="./rules.html" id="help"> Regras e Como Jogar </a>
+
+        <main id="game-area">
+            
+        </main>
+
+        <script>
+            createGameViewWithBoardSize(10)
+        </script>
+
+    </body>
+
+</html>

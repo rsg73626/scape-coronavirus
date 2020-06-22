@@ -1,0 +1,219 @@
+
+* {
+    /* margin: 0;
+    padding: 0; */
+}
+
+html {
+    margin: 0;
+    padding: 0;
+
+    width: 100%;
+    /* height: 100%; */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+    width: 100%;
+    /* height: 100%; */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    font-family: "Arial";
+}
+
+body h1 {
+    margin: 0;
+    padding: 0;
+
+    width: 100%;
+    height: 100px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 36px;
+    text-align: center;
+    color: white;
+    background-color: gray;
+}
+
+body p {
+    /* margin-top: 30px; */
+    font-size: 24px;
+    text-align: center;
+}
+
+body #help {
+    /* margin-top: 30px; */
+    font-weight: bold;
+    font-size: 24px;
+}
+
+body #game-area {
+    width: 500px;
+    height: 650px;
+    margin-bottom: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+body #game-area #board {
+    width: 100%;
+    height: 500px;
+
+    /* margin-top: 50px; */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    border-style: solid;
+    border-color: var(--board-border-color);
+}
+
+body #game-area #board .lines {
+    width: 100%;
+    height: calc(100% / var(--board-size));
+
+    display: flex;
+    flex-direction: line;
+    justify-content: center;
+    align-items: center;
+}
+
+body #game-area #board .lines .cols {
+    width: calc((100% / var(--board-size)) - 1px);
+    height: calc(100% - 1px);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--board-background-color);
+    border-style: solid;
+    border-width: 0.5px;
+    border-color: var(--board-border-color);
+    cursor: pointer;
+    opacity: 1;
+    transition: opacity 0.2s;
+}
+
+body #game-area #board .lines .col-with-coronavirus {
+    cursor: help;
+}
+
+body #game-area #board .lines #person {
+    cursor: help;
+}
+
+body #game-area #board .lines #coronavirus {
+    cursor: help;
+}
+
+body #game-area #board .lines .col-with-person {
+    cursor: help;
+}
+
+body #game-area #board .lines .col-with-coronavirus {
+    cursor: help;
+}
+
+body #game-area #board .lines .cols-with-obstacle {
+    cursor: url("../resources/images/removeobstacle.svg") 15 15, none;
+}
+
+body #game-area #board .lines .cols-with-coronavirus-path {
+    cursor: help;
+}
+
+body #game-area #board .lines .cols:hover {
+    opacity: 0.5;
+}
+
+body #game-area #board .lines .col-with-person:hover {
+    opacity: 1;
+}
+
+body #game-area #board .lines .col-with-coronavirus:hover {
+    opacity: 1;
+}
+
+body #game-area #board .lines .cols-with-obstacle:hover {
+    opacity: 1;
+}
+
+body #game-area #board .lines .cols-with-coronavirus-path:hover {
+    opacity: 1;
+}
+
+body #game-area #board .lines .blocked {
+    cursor: not-allowed;
+}
+
+body #game-area #board .lines .blocked:hover {
+    opacity: 1;
+}
+
+body #game-area #board .lines .cols .game-elements {
+    width: 80%;
+    height: 80%;
+}
+
+body #game-area section {
+    width: 100%;
+    height: 10%;
+
+    display: flex;
+    flex-direction: line;
+    justify-content: center;
+    align-items: center;
+}
+
+body #game-area section figure {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: line;
+    justify-content: center;
+    align-items: center;
+
+    cursor: help;
+}
+
+body #game-area section figure img {
+    margin-right: 30px;
+}
+
+body #game-area section figure figcaption {
+    font-size: 24px;
+}
+
+body #game-area #game-button {
+    width: 200px;
+    height: 56px;
+
+    /* margin-bottom: 50px;
+    margin-top: 50px; */
+
+    font-weight: bold;
+    font-size: 24px;
+    border-style: none;
+    background-color: var(--button-color);
+    color: var(--button-text-color);
+    border-radius: 10px;
+    cursor: pointer;
+}
