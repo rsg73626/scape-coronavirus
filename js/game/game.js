@@ -18,7 +18,3 @@ function createGameViewWithBoardSize(boardSize) {
     // gameView.controller.board.updateNodesWeight()
     // gameView.controller.board.printBoardWeights()
 }
-
-function help() {
-    window.alert('Scape Coronavírus\nTriangulo Amarelo: representa uma Pessoa - sua posição é fixa. \nCirculo Verde: representa o Coronavírus - ele pode ser mover para esquerda, direita, cima ou baixo. \nLosangulo cinza: representa um obstáculo - sua posição é fixa. \nPosicione obstáculos no tabuleiro clicando em qualquer área vázia para evitar que o Coronavírus chegue até a Pessoa.')
-}
