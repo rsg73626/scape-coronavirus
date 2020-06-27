@@ -1,5 +1,19 @@
+/*
+    Grafo
 
+    A implementação desse tipo abstrato de dado (TAD) está dividida em duas classes.
+Node, que representa um nó do grafo e possui um identificador (gerado automaticamente 
+e utilizado pela aplicação para facilitar algumas rotinas – não deve ser alterado pelo 
+desenvolvedor), um valor, um peso e as conexões com outros nós do grafo. Graph, que 
+possui uma lista de nós. Ambas as classes possuem funções para a criação e manipulação 
+de diferentes instâncias de grafos.
+    É importante dizer que, o valor da propriedade value de um nó do grafo não precisa 
+ser obrigatoriamente de um tipo primitivo (um inteiro, um ponto flutuante, um booleano, 
+etc). Essa propriedade pode ser outro objeto, ou até mesmo uma função, porque a linguagem 
+permite essa flexibilidade. Portanto, o tipo do valor que será atribuído para cada nó é 
+definido de acordo com a necessidade do problema que deseja solucionar. 
 
+ */
 
 class Node {
 
